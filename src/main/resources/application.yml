@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spb_api
+  jpa:
+    hibernate:
+      ddl-auto: update
+  config:
+    import: optional:file:./application-secret.yml
+
+server:
+  port: 8080
+
+app:
+  api-url: http://api.weatherapi.com/v1/current.json
+  time-schedule: 900_000
+  expiration-data: 24
